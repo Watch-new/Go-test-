@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 		<!-- CSS -->
-        <meta name="X-CSRF-TOKEN" content="cczefHUjBK4LZKN0nUV4qqbTBIBRL2J0iDjpON1s">
+        <meta name="X-CSRF-TOKEN" content="rHpGxUewY01YyoRAE9TekRNtg1pSmNQRoIlmODSs">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 		<meta name="format-detection" content="telephone=no">
@@ -42,7 +42,7 @@
 <!-- nav end -->
 
                 <form action="#">
-        <input type="hidden" name="_token" value="cczefHUjBK4LZKN0nUV4qqbTBIBRL2J0iDjpON1s">        <main class="main page1">
+        <input type="hidden" name="_token" value="rHpGxUewY01YyoRAE9TekRNtg1pSmNQRoIlmODSs">        <main class="main page1">
 
             
             <div class="main__choose-diamonds choose-diamonds">
@@ -203,8 +203,7 @@
                                                                 <img alt="Diamond" src=https://ds.topfollow.app/img/red-diamond.svg >
                                 <span data-value="1000000">1000000</span>
 
-                                                                    <span>0
-                                                               $ </span>
+                                                                    <span>199.99 $ </span>
                                 
                                 <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 1L9 9L1 17" stroke-linecap="round" stroke-linejoin="round"/>
@@ -257,19 +256,63 @@
                         </div>
                     </div>
                     <input type="text" id="inpt__refcode" placeholder="Your referral code"
-                           value="" oninput="checkOrderConfirmForm()" required>
-                    <input type="text" id="inpt__email" placeholder="Your email" oninput="checkOrderConfirmForm()" required>
+                           value="" oninput="checkOrderConfirmForm(done)" required>
+                    <input type="text" id="inpt__email" placeholder="Your email" oninput="checkOrderConfirmForm(done)" required>
 
-                    <input type="submit" class="order-confirm__payment-btn orange-btn" value="Make payment">
+                    <input type="submit" value="Make payment">
 
-                 
+                    <div id="custom_loader" class="loader loader--style6" title="5">
+                        <svg version="1.1" id="Layer_1" xmlns="" x="0px" y="0px"
+                             width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                            <rect x="0" y="13" width="4" height="5" fill="#333">
+                                <animate attributeName="height" attributeType="XML"
+                                         values="5;21;5"
+                                         begin="0s" dur="0.6s" repeatCount="indefinite"/>
+                                <animate attributeName="y" attributeType="XML"
+                                         values="13; 5; 13"
+                                         begin="0s" dur="0.6s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="10" y="13" width="4" height="5" fill="#333">
+                                <animate attributeName="height" attributeType="XML"
+                                         values="5;21;5"
+                                         begin="0.15s" dur="0.6s" repeatCount="indefinite"/>
+                                <animate attributeName="y" attributeType="XML"
+                                         values="13; 5; 13"
+                                         begin="0.15s" dur="0.6s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="20" y="13" width="4" height="5" fill="#333">
+                                <animate attributeName="height" attributeType="XML"
+                                         values="5;21;5"
+                                         begin="0.3s" dur="0.6s" repeatCount="indefinite"/>
+                                <animate attributeName="y" attributeType="XML"
+                                         values="13; 5; 13"
+                                         begin="0.3s" dur="0.6s" repeatCount="indefinite"/>
+                            </rect>
+                          </svg>
+                    </div>
 
-           
+
+                    <p class="order-confirm__form-error"></p>
+                    <div class="order-confirm__form-checkbox" onClick="checkOrderConfirmForm()">
+                        <input type="checkbox" id="order-confirm-checkbox" name="checkbox">
+                        <label for="order-confirm-checkbox">
+                            <div>
+                                <div></div>
+                            </div>
+                            <span>You agree with our <a href="/shop/terms">Terms and Privacy Policy</a></span>
+                        </label>
+                    </div>
+                    <input type="hidden" name="inpt__default_payment_method" id="inpt__default_payment_method"
+                           value="pp">
+                </div>
+            </div>
+
+            <!-- finish_waiting finish_success finish_canceled -->
             <div class="main__finish finish finish_waiting">
 
                 <div class="finish__image">
                     <div class="loader loader--style3">
-                        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        <svg version="1.1" id="loader-1" xmlns="" x="0px" y="0px"
                              viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
 							 	 	<path fill="#FCA200"
                                           d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
@@ -283,8 +326,8 @@
                                     </path>
 							  	</svg>
                     </div>
-                    <img alt="Check mark" src=https://ds.topfollow.app/img/check-mark.png />
-                    <img alt="Canceled" src=https://ds.topfollow.app/img/cancel.png />
+                    <img alt="Check mark" src= />
+                    <img alt="Canceled" src= />
                 </div>
 
                 <p>
@@ -314,7 +357,7 @@
         <footer>
     <p>Copyright &copy; <span style="margin-right: 5px"> 2024 </span>  <img src="https://ds.topfollow.app/img/app-apk.svg" alt="logo"> Topfollow.app  |  All Rights Reserved.</p>
     <br>
-    <a href="https://topfollow.app/shop/terms" class="help__link__main " target="_blank">Terms and Privacy Policy</a>
+    <a href="" class="help__link__main " target="_blank">Terms and Privacy Policy</a>
 </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
